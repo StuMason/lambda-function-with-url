@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  sam-app
+Transform:
+- AWS::Serverless-2016-10-31
+Resources:
+  WebhookFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.handle
+      Runtime: python3.9
+      Description: Cheeky Webhook
+      FunctionUrlConfig:
+        AuthType: NONE
