@@ -60,4 +60,5 @@ Function with exposed HTTPS endpoint created automatically by AWS Lambda.
   }, 
   'isBase64Encoded': False
 }
+
 ```
